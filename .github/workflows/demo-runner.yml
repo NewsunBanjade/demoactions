@@ -11,7 +11,7 @@ jobs:
     - name: Deploy to server
       uses: appleboy/ssh-action@v1
       with:
-        host: ${{secrets.HOST}}
-        username: ${{secrets.USERNAME}}
-        key: ${{secrets.SSH_KEY}}
+        host: ${{ secrets.HOST}}
+        username: ${{ secrets.USERNAME}}
+        key: ${{ secrets.SSH_KEY}}
         script: mkdir -p test/abc/server && echo "Folder Created Done."
